@@ -1,0 +1,21 @@
+{
+    "name": "aws-bootstrap",
+    "module": "index.ts",
+    "type": "module",
+    "private": true,
+    "main": "index.ts",
+    "scripts": {
+        "start": "pm2 start index.ts --name hello_aws --log logs/app.log",
+        "stop": "pm2 stop hello_aws",
+        "build": "echo 'Building project...'"
+    },
+    "devDependencies": {
+        "@types/bun": "latest"
+    },
+    "peerDependencies": {
+        "typescript": "^5"
+    },
+    "dependencies": {
+        "pm2": "^6.0.14"
+    }
+}
